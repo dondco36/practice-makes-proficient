@@ -1,0 +1,70 @@
+/* Mobile first CSS */
+html {
+    box-sizing: border-box;
+}
+
+*:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header {
+    border-bottom: 2px solid black;
+    background-color: #2196f3;
+    padding: 6px;
+    text-align: center;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #1565c0;
+    border-bottom: 2px solid black; 
+}
+
+.navbar a {
+    padding: 12px;
+    text-align: center;
+    color: #ffffff;
+    display: block;
+    float: none;
+}
+
+.navbar a:hover {
+    opacity: 0.4;
+}
+
+.subscribe {
+    border-bottom: 2px solid black; 
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.content {
+    text-align: center;
+    padding: 10px;
+}
+
+.footer {
+    background-color: #2196f3;
+    border-top: 2px solid black;
+    text-align: center;
+}
+
+.footer h3 {
+    margin: 0;
+    padding: 6px
+}
+
+/* Changes layout with screen larger than 768px */
+/* @media (min-width: 768px) {
+
+} */
+
+/* Changes layout with screen larger than 1024px */
+/* @media (min-width: 1024px) {
+
+} */
