@@ -4,6 +4,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <title>Demo Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
         <link rel="stylesheet" href="css/demopage.css">
     </head>
     <body>
@@ -15,29 +17,13 @@
 
         <nav class="navbar card">
             <ul>
-                <li><a href='#'>Home></a></li>
-                <li><a href='#'>Sign In></a></li>
-                <li><a href='#'>Products></a></li>
-                <li><a href='#'>Contact></a></li>
-                <li><a href='#'>About></a></li>
+                <li><a href='#home'>Home</a></li>
+                <li><a href='#signin'>Sign In</a></li>
+                <li><a href='#products'>Products</a></li>
+                <li><a href='#contact'>Contact</a></li>
+                <li><a href='#about'>About</a></li>
             </ul>
         </nav>
-
-        <div class="subscribe card">
-            <h2>Subscribe</h2>
-            <p>Stay up to date with new releases and sales!</p>
-
-            <form>
-                <label for="fname"></label><br>
-                <input type="text" placeholder="First Name" id="fname" name="fname"><br>
-                <label for="lname"></label><br>
-                <input type="text" placeholder="Last Name" id="lname" name="lname"><br>
-                <label for="email"></label><br>
-                <input type="text" placeholder="E-mail" id="email" name="email"><br>
-                <br>
-                <input type="submit" value="Subscribe">
-            </form>
-        </div>
 
         <div class="content card">
 
@@ -49,22 +35,44 @@
             <div>
                 <h3>What do we offer?</h3>
                 <p>Occaecat officia ball tip pork chop eiusmod laborum excepteur filet mignon. Chislic exercitation ground round in veniam boudin. Meatloaf quis tongue sirloin consectetur tail dolor hamburger pork anim prosciutto capicola proident. Aliquip adipisicing labore, salami dolore ball tip ut sed landjaeger ground round. Est ad reprehenderit fugiat sausage laborum beef, nostrud officia ut. Nisi strip steak jerky, duis kevin buffalo chicken exercitation ullamco meatball. Pastrami velit sed ham hock tenderloin shank corned beef.</p>
-                <button>Shop Now!</button>
+                <button type="button" href="#products" class="btn btn2"><span>Shop Now!</span></button>
             </div>
+        </div>
+        
+        <div class="subscribe card">
+            <h2>Subscribe</h2>
+            <p>Stay up to date with new releases and sales!</p>
+
+            <form>
+                <label for="email"></label><br>
+                <input type="text" placeholder="E-mail" id="email" name="email" required><br>
+                <br>
+                <button type="button" class="btn btn1"><span>Subscribe</span></button>
+            </form>
         </div>
 
         <footer class="card">
             <div>
-                <h3>Contact Us!</h3>
-                <p>A form will go here.</p>
+                <h3>Questions, Comments or Concerns?</h3>
+                <form>
+                    <input type="text" placeholder="First Name" id="fname" name="fname" required><br>
+                    <br>
+                    <input type="text" placeholder="Last Name" id="lname" name="lname" required><br>
+                    <br>
+                    <input type="text" placeholder="Subject" id="subject" name="subject" required><br>
+                    <br>
+                    <input type="text" placeholder="Message" id="message" name="message" required><br>
+                    <br>
+                    <button type="button" class="btn btn2"><span>Send</span></button>
+                  </form>
             </div>
-            <div>
-                <h3>About</h3>
-                <p>Words and Links.</p>
-            </div>
-            <div>
+            <div class="socialmedia">
                 <h3>Social Media and Contact</h3>
-                <p>Links and stuff goes here.</p>
+                    <ul>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-pinterest"></a></li>
+                    </ul>
             </div>
         </footer>
 
