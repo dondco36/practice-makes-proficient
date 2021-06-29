@@ -50,33 +50,42 @@ input {
     opacity: 0.7;
 }
 
-.navbar {
+/* Style the buttons that are used to open and close the accordion panel */
+.navbtn, .accordion {
     background-color: #000000;
-}
-
-.navbar ul {
-    list-style-type: none;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-/* .navbar li {
-    float: left;
-} */
-
-.navbar li a {
-    display: block;
     color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    font-family: Cinzel, serif;
     text-align: center;
-    padding: 14px 16px;
+    font-size: 26px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+a:link, a:visited {
     text-decoration: none;
+    color: #ffffff;
+}
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .navbtn:hover, .accordion:hover {
+    background-color: #424242;
+}
+  
+  /* Style the accordion panel. Note: hidden by default */
+.panel {
+    text-align: center;
     font-family: Cinzel, serif;
     font-size: 20px;
-}
-
-.navbar li a:hover {
-    background-color: #424242;
+    padding: 18px;
+    background-color: #000000;
+    display: none;
+    overflow: hidden;
+    /* max-height: 0;
+    transition: max-height 0.2s ease-out; */
 }
 
 .subscribe {
