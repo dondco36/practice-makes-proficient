@@ -32,6 +32,11 @@ input {
     resize: none;
 }
 
+.left, .right {
+    width: 100%;
+    padding: 0;
+}
+
 .card {
     padding: 10px;
     margin: 20px 10px 20px 10px;
@@ -77,15 +82,19 @@ a:link, a:visited {
   
   /* Style the accordion panel. Note: hidden by default */
 .panel {
+    width: 100%;
     text-align: center;
     font-family: Cinzel, serif;
     font-size: 20px;
-    padding: 18px;
     background-color: #000000;
-    display: none;
     overflow: hidden;
-    /* max-height: 0;
-    transition: max-height 0.2s ease-out; */
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel li {
+    margin: 18px;
+    list-style-type: none;
 }
 
 .subscribe {
@@ -203,11 +212,38 @@ footer {
 }
 
 /* Changes layout with screen larger than 768px */
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
 
-} */
+    .left {
+        float: left;
+        width: 30%;
+    }
+
+    .right {
+        float: right;
+        width: 69%;
+    }
+
+    .clear:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .content p {
+        text-align: left;
+    }
+}
 
 /* Changes layout with screen larger than 1024px */
-/* @media (min-width: 1024px) {
+@media (min-width: 1024px) {
+    .left {
+        float: left;
+        width: 25%;
+    }
 
-} */
+    .right {
+        float: right;
+        width: 74%;
+    }
+}
