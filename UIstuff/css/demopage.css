@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5 a{
     font-size: 26px;
 }
 
-p {
+p, textarea, input, button {
     font-family: 'Fauna One', serif;
     font-size: 14px;
 }
@@ -43,7 +43,7 @@ input {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.topright {
+.headtext {
     position: absolute;
     top: 50px;
     right: 60px;
@@ -76,7 +76,7 @@ a:link, a:visited {
 }
 
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .navbtn:hover, .accordion:hover {
+.active, .navbtn:hover, .accordion:hover, .panel li:hover {
     background-color: #424242;
 }
   
@@ -93,8 +93,9 @@ a:link, a:visited {
 }
 
 .panel li {
-    margin: 18px;
+    padding: 18px;
     list-style-type: none;
+    cursor: pointer;
 }
 
 .subscribe {
@@ -188,12 +189,16 @@ footer {
     display: inline;
 }
 
+.socialmedia li:hover {
+    opacity: 0.8;
+}
+
 .fa {
     padding: 20px;
     font-size: 30px;
     width: 50px;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 5px 5px;
 }
 
 .fa-instagram {
@@ -233,6 +238,17 @@ footer {
     .content p {
         text-align: left;
     }
+
+    .headtext {
+        top: 100px;
+        right: 20%;
+        font-size: 40px;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 /* Changes layout with screen larger than 1024px */
@@ -245,5 +261,20 @@ footer {
     .right {
         float: right;
         width: 74%;
+    }
+
+    .headtext {
+        top: 100px;
+        right: 15%;
+        font-size: 60px;
+    }
+}
+
+/* Changes layout with screen larger than 1024px */
+@media (min-width: 1450px) {
+    .headtext {
+        top: 100px;
+        right: 15%;
+        font-size: 80px;
     }
 }

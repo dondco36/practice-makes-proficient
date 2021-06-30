@@ -14,34 +14,49 @@
             <div class="card">
                 <header>
                     <img src="css/images/img1.jpg" alt="cityscape" class="img1">
-                    <h1 class="topright">Company Site<br>
+                    <h1 class="headtext">Company Site<br>
                         In progess...
                     </h1>
                 </header>
             </div>
-    
             <div class="left">
-                <nav class="navbar">
+                <div>
+                    <nav class="navbar">
+                        <div class="subscribe card">
+                            <button class="navbtn"><a href="base.html">Home</a></button>
+                            <button class="accordion">Account</button>
+                                <div class="panel">
+                                    <li><a href="#signin">Sign In</a></li>
+                                    <li><a href="#signup">Sign Up</a></li>
+                                </div>
+                            <button class="accordion">Shop</button>
+                                <div class="panel">
+                                    <li><a href="#summer">Summer</a></li>
+                                    <li><a href="#fall">Fall</a></li>
+                                    <li><a href="#winter">Winter</a></li>
+                                    <li><a href="#spring">Spring</a></li>
+                                    <li><a href="#accessories">Accessories</a></li>
+                                </div>
+                                <button class="navbtn"><a href="#contact">Contact</a></button>
+                        </div>
+                    </nav>
+                </div>
+        
+                <div>
                     <div class="subscribe card">
-                        <button class="navbtn"><a href="base.html">Home</a></button>
-                        <button class="accordion">Account</button>
-                            <div class="panel">
-                                <li><a href="#signin">Sign In</a></li>
-                                <li><a href="#signup">Sign Up</a></li>
-                            </div>
-                        <button class="accordion">Shop</button>
-                            <div class="panel">
-                                <li><a href="#summer">Summer</a></li>
-                                <li><a href="#fall">Fall</a></li>
-                                <li><a href="#winter">Winter</a></li>
-                                <li><a href="#spring">Spring</a></li>
-                                <li><a href="#accessories">Accessories</a></li>
-                            </div>
-                            <button class="navbtn"><a href="#contact">Contact</a></button>
+                        <h2>Subscribe</h2>
+                        <p>Stay up to date with new releases and sales!</p>
+            
+                        <form>
+                            <label for="email"></label><br>
+                            <input type="text" placeholder="E-mail" id="email" name="email" required><br>
+                            <br>
+                            <button type="submit" class="btn btn1"><span>Subscribe</span></button>
+                        </form>
                     </div>
-                </nav>
+                </div>
             </div>
-    
+
             <div class="right">
                 <div class="card">
                     <div class="content">
@@ -68,25 +83,11 @@
         
                 </div>
             </div>
-            
-            <div class="left">
-                <div class="subscribe card">
-                    <h2>Subscribe</h2>
-                    <p>Stay up to date with new releases and sales!</p>
-        
-                    <form>
-                        <label for="email"></label><br>
-                        <input type="text" placeholder="E-mail" id="email" name="email" required><br>
-                        <br>
-                        <button type="submit" class="btn btn1"><span>Subscribe</span></button>
-                    </form>
-                </div>
-            </div>
     
         </div>
 
         <footer>
-            <div class="card" id="contact">
+            <div class="flex-container card" id="contact">
                 <div>
                     <h3>Questions, Comments or Concerns?</h3>
                     <form>
@@ -102,6 +103,11 @@
                       </form>
                 </div>
                 <div class="socialmedia">
+                    <h3>Address</h3>
+                    <p>1234 Front Street<br>
+                    Anywhere, Earth 00001</p>
+                    <h4>Customer Support</h4>
+                    <p>(123) 456-7890</p>
                     <h3>Social Media and Contact</h3>
                         <ul>
                             <li><a href="#" class="fa fa-instagram"></a></li>
